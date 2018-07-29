@@ -8,7 +8,7 @@
 .header {
     @include size (100%, auto);
     min-height: 800px;
-    background: url(../../slava_portfolio/images/heroimg.jpg) no-repeat top center;
+    background: url(../images/heroimg.jpg) no-repeat top center;
     background-size: cover;
     font-family: $montserrat-light;
     .container-fluid {
