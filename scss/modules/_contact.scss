@@ -1,0 +1,86 @@
+@font-face {
+    @include font-face (Montserrat-light, "../scss/fonts/Montserrat/montserrat-light-webfont", 300); 
+}
+@font-face {
+    @include font-face (Montserrat-regular, "../scss/fonts/Montserrat/montserrat-regular-webfont", 400); 
+}
+@font-face {
+    @include font-face (Montserrat-regular, "../scss/fonts/Montserrat/montserrat-medium-webfont", 500); 
+}
+@font-face {
+    @include font-face (Raleway-regular, "../scss/fonts/Raleway/raleway-regular-webfont", 400); 
+}
+@font-face {
+    @include font-face (Raleway-light, "../scss/fonts/Raleway/raleway-light-webfont", 300); 
+}
+.contact {
+    width: 1340px;
+    padding: 87px 20px 0;
+    margin: 0 auto;
+}
+.section-name  {
+    font-family: $montserrat-light;
+    font-size: 30px;
+    position: relative;
+    top: 288px;
+    left: -15px;
+    }   
+.section-name__text {
+       transform: rotate(-90deg);
+    }
+.contact-form {
+    width: 422px;
+    margin: 0 auto;
+    color: $brown;
+}
+.contact-form__title {
+    font-family: $montserrat-medium;  
+    font-size: 30px;
+    margin-bottom: 14px;
+            }
+.contact-form__description {
+    font-family: $raleway-thin;  
+    font-size: 18px;
+    margin-bottom: 26px;
+    }
+.contact-form__label {
+    font-family: $raleway-light;
+    font-size: 18px;
+    margin-left: 15px;
+    display: block;
+    margin-bottom: 8px;
+    }
+.contact-form__name, .contact-form__email, .contact-form__message {
+    background: $rose-form;
+    @include size(422px, 55px);
+    border-radius: 1px;
+    padding-left: 10px;
+    color: $brown;
+    font-size: 24px;
+    margin-bottom: 27px;
+    }
+.contact-form__message {
+    min-height: 166px;
+    resize: vertical;    
+    
+    }
+.contact-form-btn {
+    @include size(225px, 44px);
+    background: #55201c;
+    border-radius: 1px;
+    color: $white;
+    font-family: $raleway-regular;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 102px;
+    }
+@media screen and (max-width: 576px) {
+    .contact-form,.contact-form__name, .contact-form__email, .contact-form__message,.contact-form-btn {
+    width: 100%;
+}
+    .contact-form__title, .contact-form__description {
+        text-align: center;
+    }
+}
+

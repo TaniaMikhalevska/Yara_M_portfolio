@@ -1,0 +1,33 @@
+.projects {
+     width: 1340px;
+     padding: 98px 20px;
+        margin: 0 auto; 
+.row-projects {
+    position: relative;    
+    }
+    
+    }
+
+.projects::before {
+    content: "Projects";
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 80px;
+    color: #fff;
+}
+.project-1  {
+    width: 367px;
+    height: 565px;
+    background: url(../../slava_portfolio/images/chair.jpg) no-repeat top center;
+}
+.project-2 {
+    width: 411px;
+    height: 311px;
+    background: url(../../slava_portfolio/images/birds_s.jpg) no-repeat top center;
+}   
+.project-3 {
+    background: url(../../slava_portfolio/images/chair.jpg) no-repeat top center;
+} 
+.project-4 {
+    background: url(../../slava_portfolio/images/chair.jpg) no-repeat top center;
+}   

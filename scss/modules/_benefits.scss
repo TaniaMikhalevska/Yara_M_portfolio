@@ -1,0 +1,105 @@
+@font-face {
+    @include font-face (Montserrat-light, "../scss/fonts/Montserrat/montserrat-light-webfont", 300); 
+}
+@font-face {
+    @include font-face (Montserrat-regular, "../scss/fonts/Montserrat/montserrat-regular-webfont", 400); 
+}
+.benefits {
+    background: $light-brown;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto; 
+&.container {
+        width: 1340px;
+    }
+
+    .section-name  {
+        font-family: $montserrat-light;
+        font-size: 30px;
+        position: relative;
+        top: 65%;
+        left: -15px;
+
+    }   
+    .section-name__text {
+        color: $white;
+       transform: rotate(-90deg);
+    }
+    .benefit-items {
+        padding: 66px 35px 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        text-align: center;
+    }
+    .benefit-item {
+        @include size (226px);
+        border-radius: 50%;
+        background: $white;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $brown;
+        
+    }
+    .benefit-items__qty {
+        font-size: 90px;
+        font-family: $montserrat-light;
+        
+    } 
+    .benefit-items__name {
+        font-size: 18px;
+        font-family: $montserrat-regular;
+    }
+    .benefit-items__qty--img {
+        width: 48%;
+        margin: 15px auto 0;
+        
+    }
+}
+@media screen and (max-width: 992px) { 
+    .benefit-item {
+        width: 170px !important;
+        height: 170px !important; 
+         padding-top: 34px !important;
+}
+    .benefit-items__qty {
+        font-size: 70px !important;
+    }
+    .benefit-items {
+       padding: 35px 20px 45px !important;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .benefit-item {
+        width: 130px !important;
+        height: 130px !important; 
+         padding-top: 24px !important;
+}
+    .benefit-items__qty {
+        font-size: 55px !important;
+    }
+    .benefit-items {
+       padding: 25px 10px 35px !important;
+    }
+    .benefits .section-name {
+        top: 135px !important;
+    }
+}
+@media screen and (max-width: 576px) { 
+    .benefit-item {
+        width: 240px !important;
+        height: 240px !important; 
+         padding-top: 50px !important;
+}
+    .benefit-items__qty {
+        font-size: 90px !important;
+    }
+    .benefit-items {
+       padding: 66px 50px 80px !important;
+    }
+    .benefits .section-name {
+        top: 53% !important;
+    }
+}

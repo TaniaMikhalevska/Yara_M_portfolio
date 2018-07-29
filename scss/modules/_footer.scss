@@ -1,0 +1,42 @@
+@font-face {
+    @include font-face (Raleway-thin, "../scss/fonts/Raleway/raleway-thin-webfont", 100); 
+}
+.footer {
+    width: 100%;
+    background: #36201f;
+    padding: 0 20px;
+}
+.footer-info {
+    font-family: $raleway-thin;
+    font-size: 18px;
+    color: $white;
+    padding-left: 52px;
+    padding-top: 23px;
+.phone {
+    margin-bottom: 10px;
+    }
+    
+    }
+.footer-socialnets {
+    float: right;    
+    }
+.footer-socialnets__items {
+     font-size: 0;
+     float: right;
+    }
+.footer-socialnets__item {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 90px;
+    margin-right: 26px;
+    & a {
+    text-decoration: none;
+    color: $white;
+    opacity: 0.8;
+    }
+    }
+.footer-socialnets__item:last-child {
+      margin-right: 0;  
+
+
+}

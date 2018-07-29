@@ -1,0 +1,73 @@
+@font-face {
+    @include font-face (Montserrat-light, "../scss/fonts/Montserrat/montserrat-light-webfont", 300); 
+}
+@font-face {
+    @include font-face (Montserrat-medium, "../scss/fonts/Montserrat/montserrat-medium-webfont", 500); 
+}
+@font-face {
+    @include font-face (Raleway-thin, "../scss/fonts/Raleway/raleway-thin-webfont", 100); 
+}
+@font-face {
+    @include font-face (Raleway-regular, "../scss/fonts/Raleway/raleway-regular-webfont", 400); 
+}
+.about {
+        color: $brown;
+        width: 1340px;
+        margin: 0 auto;
+        padding: 0 20px;
+    .section-name  {
+        font-family: $montserrat-light;
+        font-size: 30px;
+        position: relative;
+        top: 288px;
+        left: -15px;
+
+    }   
+    .section-name__text {
+       transform: rotate(-90deg);
+    }
+    .designer-photo {
+        position: relative;
+        top: -7%;
+        left: 13%;
+        z-index: -1;
+    }
+    .designer-info {
+        padding-top: 118px;
+        padding-left: 32px;
+        
+     .designer-info--name {
+        font-family: $montserrat-medium;
+        font-size: 24px; 
+        margin-bottom: 8px;
+    }
+     .designer-info--skills {
+        font-family: $raleway-thin;
+        font-size: 16px;
+        margin-bottom: 53px;
+    }
+     .designer-info--resume {
+        font-family: $raleway-regular;
+        font-size: 20px;
+        line-height: 25px;
+         margin-bottom: 126px;
+     .link {
+           color: $brown;
+            position: relative;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .designer-photo {
+      position: relative ;
+      top: 25px !important;
+    }
+    .designer-info {
+       padding-top: 20px !important;
+       padding-left: 15px !important; 
+    }
+    .section-name {
+        top: 40% !important;
+    }
+}
