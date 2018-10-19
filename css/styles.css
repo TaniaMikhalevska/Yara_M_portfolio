@@ -3410,6 +3410,9 @@ body, html {
   text-decoration: none;
   font-size: 16px;
 }
+.header .header-nav__link:hover {
+  text-decoration: underline;
+}
 .header .social-network {
   padding-top: 15px;
 }
@@ -3429,6 +3432,10 @@ body, html {
   font-family: Montserrat-regular, sans-serif;
   color: #fff;
   line-height: 25px;
+  opacity: 0.7;
+}
+.header .social-network__link:hover {
+  opacity: 1;
 }
 .header i {
   font-size: 25px;
@@ -3499,6 +3506,9 @@ body, html {
   left: 13%;
   z-index: -1;
 }
+.about .col-photo:hover img {
+  transform: translateY(40px);
+}
 .about .designer-info {
   padding-top: 118px;
   padding-left: 32px;
@@ -3523,8 +3533,11 @@ body, html {
   color: #514240;
   position: relative;
 }
+.about .designer-info .designer-info--resume .link:hover {
+  color: #9f8d83;
+}
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .designer-photo {
     position: relative;
     top: 25px !important;
@@ -3657,41 +3670,43 @@ body, html {
     top: 53% !important;
   }
 }
-.projects {
-  width: 1340px;
-  padding: 98px 20px;
-  margin: 0 auto;
+.project {
+  position: relative;
 }
-.projects .row-projects {
+.project .col-3, .project .col-4, .project .col-6 {
+  padding: 0;
+}
+.project-row2 {
+  margin-bottom: 98px;
+  margin-top: -3px;
+}
+.project-row1 {
+  margin-top: 98px;
+}
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.project__img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+.project__img:hover {
+  transform: scale(1.08);
+  filter: brightness(120%);
+}
+.project .section-name__text {
+  left: -15px;
+  color: #514240;
+  font-family: Montserrat-light, sans-serif;
+  font-size: 30px;
   position: relative;
 }
 
-.projects::before {
-  content: "Projects";
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 80px;
-  color: #fff;
-}
-
-.project-1 {
-  width: 367px;
-  height: 565px;
-  background: url(../images/chair.jpg) no-repeat top center;
-}
-
-.project-2 {
-  width: 411px;
-  height: 311px;
-  background: url(../images/birds_s.jpg) no-repeat top center;
-}
-
-.project-3 {
-  background: url(../images/chair.jpg) no-repeat top center;
-}
-
-.project-4 {
-  background: url(../images/chair.jpg) no-repeat top center;
+.wrapper {
+  overflow: hidden;
 }
 
 @font-face {
@@ -3843,6 +3858,12 @@ body, html {
   font-size: 24px;
   margin-bottom: 27px;
 }
+.contact-form__name:hover, .contact-form__email:hover, .contact-form__message:hover {
+  border: 1px solid #9f8d83;
+}
+.contact-form__name:focus, .contact-form__email:focus, .contact-form__message:focus {
+  border: 1px solid #9f8d83;
+}
 
 .contact-form__message {
   min-height: 166px;
@@ -3852,6 +3873,7 @@ body, html {
 .contact-form-btn {
   width: 225px;
   height: 44px;
+  border: 1px solid #55201c;
   background: #55201c;
   border-radius: 1px;
   color: #fff;
@@ -3860,6 +3882,10 @@ body, html {
   float: right;
   cursor: pointer;
   margin-bottom: 102px;
+}
+.contact-form-btn:hover {
+  background: #fff;
+  color: #55201c;
 }
 
 @media screen and (max-width: 576px) {
@@ -3913,7 +3939,10 @@ body, html {
 .footer-socialnets__item a {
   text-decoration: none;
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.5;
+}
+.footer-socialnets__item:hover a {
+  opacity: 1;
 }
 
 .footer-socialnets__item:last-child {

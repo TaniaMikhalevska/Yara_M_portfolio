@@ -1,33 +1,45 @@
-.projects {
-     width: 1340px;
-     padding: 98px 20px;
-        margin: 0 auto; 
-.row-projects {
-    position: relative;    
+.project {
+    position: relative;
+    & .col-3, & .col-4, & .col-6 {
+        padding: 0;
+    }
+    &-row2 {
+        margin-bottom: 98px;
+        margin-top: -3px;
+    }
+    &-row1 {
+        margin-top: 98px;
+    }
+    &-wrapper {
+       display: flex;
+       flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+    &__img {
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+        &:hover {
+             transform: scale(1.08);
+            filter: brightness(120%);
+        
+        }
+    
+ }
+        .section-name__text {
+            left: -15px;
+            color: $brown;
+          font-family: $montserrat-light;
+        font-size: 30px;
+        position: relative;
+        }
+      
+    
+
     }
     
-    }
 
-.projects::before {
-    content: "Projects";
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 80px;
-    color: #fff;
+
+.wrapper {
+    overflow: hidden;
 }
-.project-1  {
-    width: 367px;
-    height: 565px;
-    background: url(../images/chair.jpg) no-repeat top center;
-}
-.project-2 {
-    width: 411px;
-    height: 311px;
-    background: url(../images/birds_s.jpg) no-repeat top center;
-}   
-.project-3 {
-    background: url(../images/chair.jpg) no-repeat top center;
-} 
-.project-4 {
-    background: url(../images/chair.jpg) no-repeat top center;
-}   

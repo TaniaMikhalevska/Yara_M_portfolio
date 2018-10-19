@@ -58,6 +58,13 @@
     color: $brown;
     font-size: 24px;
     margin-bottom: 27px;
+    &:hover {
+         border: 1px solid $light-brown;
+    }
+    &:focus {
+    
+        border: 1px solid $light-brown;
+    }
     }
 .contact-form__message {
     min-height: 166px;
@@ -66,6 +73,7 @@
     }
 .contact-form-btn {
     @include size(225px, 44px);
+    border: 1px solid #55201c;
     background: #55201c;
     border-radius: 1px;
     color: $white;
@@ -74,6 +82,10 @@
     float: right;
     cursor: pointer;
     margin-bottom: 102px;
+    &:hover {
+        background: $white;
+        color: #55201c;
+    }
     }
 @media screen and (max-width: 576px) {
     .contact-form,.contact-form__name, .contact-form__email, .contact-form__message,.contact-form-btn {
